@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-12 07:20:59 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTI7MDc6MTY6MTQgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTI7MDc6MjA6NTkgUE07MTsyOTY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pan" type="Integer" array="False" size=""/>
+            <declare name="Circle" type="Integer" array="False" size=""/>
+            <declare name="Square" type="Integer" array="False" size=""/>
+            <declare name="Temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;What pan are you using(Square or Circle)&quot;" newline="True"/>
+            <input variable="Pan"/>
+            <if expression="Pan==Circle">
+                <then>
+                    <output expression="&quot;What Temp is your oven set to&quot;" newline="True"/>
+                    <input variable="Temp"/>
+                    <if expression="TEMP==350">
+                        <then>
+                            <output expression="&quot;Lets bake a cake!!!&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Pan==Square">
+                        <then>
+                            <output expression="&quot;You cannot use a square pan to bake this cake&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

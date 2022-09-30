@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-18 08:51:59 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTg7MDU6MzQ6MzUgUE07Mjg2Mg=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTg7MDg6NTE6NTkgUE07MjsyOTc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cname" type="String" array="False" size=""/>
+            <declare name="msgcount" type="Integer" array="False" size=""/>
+            <declare name="bill" type="Real" array="False" size=""/>
+            <declare name="bill1" type="Real" array="False" size=""/>
+            <declare name="bill2" type="Real" array="False" size=""/>
+            <declare name="bill3" type="Real" array="False" size=""/>
+            <declare name="bill4" type="Real" array="False" size=""/>
+            <output expression="&quot;Hello customer, thank you for choosing the Hunter Cell Phone Company! Please use our system to determine your bill cost by entering in your message count: &quot;" newline="True"/>
+            <output expression="&quot;Please enter your name: &quot;" newline="True"/>
+            <input variable="cname"/>
+            <output expression="cname&amp; &quot;, Please enter the amount of messages you have sent: &quot;" newline="True"/>
+            <input variable="msgcount"/>
+            <declare name="servicecost" type="Real" array="False" size=""/>
+            <declare name="servicecost1" type="Real" array="False" size=""/>
+            <declare name="servicecost2" type="Integer" array="False" size=""/>
+            <if expression="msgcount&gt;0 &amp;&amp; msgcount&lt;=60">
+                <then>
+                    <assign variable="servicecost" expression="5"/>
+                    <assign variable="bill" expression="servicecost+5*.12"/>
+                    <output expression="cname&amp; &quot;, Your total before taxes your bill comes out to:$ &quot; &amp;servicecost" newline="True"/>
+                    <output expression="cname&amp; &quot;, Your total with taxes your bill comes out to:$ &quot; &amp;bill" newline="True"/>
+                </then>
+                <else>
+                    <if expression="msgcount&gt;=60 &amp;&amp; msgcount&lt;=200">
+                        <then>
+                            <assign variable="servicecost" expression="(msgcount-60)*(.10)+5"/>
+                            <assign variable="bill" expression="servicecost*.12+servicecost"/>
+                            <assign variable="servicecost" expression="5+bill*.10"/>
+                            <output expression="cname&amp; &quot;, Your total before taxes your bill comes out to:$ &quot; &amp;servicecost" newline="True"/>
+                            <output expression="cname&amp; &quot;, Your total with taxes your bill comes out to:$ &quot; &amp;bill" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="servicecost" expression="(msgcount-200)*.25"/>
+                            <assign variable="bill2" expression="servicecost+19"/>
+                            <assign variable="bill3" expression="bill2*.12"/>
+                            <assign variable="bill4" expression="bill2+bill3"/>
+                            <output expression="cname&amp; &quot;, Your total before taxes your bill comes out to:$ &quot; &amp;bill2" newline="True"/>
+                            <output expression="cname&amp; &quot;, Your total with taxes your bill comes out to:$ &quot; &amp;bill4" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Thank you for choosing The Hunter Cellphone Company : &quot;" newline="True"/>
+            <output expression="&quot;Have a Good Day &quot; &amp;cname" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

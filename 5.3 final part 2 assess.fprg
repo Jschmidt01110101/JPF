@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-20 07:18:23 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMjA7MDY6NDU6NDUgUE07Mjg1OQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMjA7MDc6MTg6MjMgUE07NTsyOTY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="zipcode, age, items, low, high, ageSum, customerCount" type="Integer" array="False" size=""/>
+            <assign variable="low" expression="0"/>
+            <assign variable="high" expression="0"/>
+            <assign variable="customerCount" expression="0"/>
+            <assign variable="ageSum" expression="0"/>
+            <output expression="&quot;Alexander's Coffee Shop: Hello Clerk, use this system throughout the day. When your shift is finished please enter 0 in the ZipCode prompt&quot;" newline="True"/>
+            <output expression="&quot;Please enter the customers Zip code: &quot;" newline="True"/>
+            <input variable="zipcode"/>
+            <while expression="zipcode !=0">
+                <output expression="&quot;Please enter a Age:&quot;" newline="True"/>
+                <input variable="age"/>
+                <while expression="age &lt; 10 || age &gt; 100">
+                    <output expression="&quot;Wrong age range, try entering the age again: &quot;" newline="True"/>
+                    <output expression="&quot;Please enter a Age:&quot;" newline="True"/>
+                    <input variable="age"/>
+                </while>
+                <output expression="&quot;Please enter the number of items: &quot;" newline="True"/>
+                <input variable="items"/>
+                <if expression="age &lt; 25">
+                    <then>
+                        <assign variable="low" expression="low+1"/>
+                    </then>
+                    <else>
+                        <assign variable="high" expression="high+1"/>
+                    </else>
+                </if>
+                <assign variable="agesum" expression="ageSum + age"/>
+                <assign variable="customerCount" expression="customerCount + 1"/>
+                <output expression="&quot;PLease enter Zip Code:&quot;" newline="True"/>
+                <input variable="zipcode"/>
+            </while>
+            <output expression="&quot;Average age of customer: &quot;" newline="True"/>
+            <output expression="ageSum/customerCount" newline="True"/>
+            <output expression="&quot; Items bought by customers younger than 25: &quot;" newline="True"/>
+            <output expression="low" newline="True"/>
+            <output expression="&quot;Items bought by customers that are 25 or older than 25: &quot;" newline="True"/>
+            <output expression="high" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

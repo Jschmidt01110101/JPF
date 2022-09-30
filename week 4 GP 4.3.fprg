@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-09 06:23:22 AM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDk7MDY6MDk6MDggQU07Mjg1MA=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDk7MDY6MjM6MjIgQU07MTsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="age, sentinelValue" type="Integer" array="False" size=""/>
+            <assign variable="sentinelValue" expression="1"/>
+            <output expression="&quot;Enter the person's name: &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter the person's age: &quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age&gt;=65">
+                <then>
+                    <output expression="&quot;You are of retirement age&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;You are not of retirement age&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Type -1 to continue with another request or any other number to exit&quot;" newline="True"/>
+            <input variable="sentinelValue"/>
+            <while expression="sentinelValue=-1">
+                <output expression="&quot;Enter the person's name: &quot;" newline="True"/>
+                <input variable="name"/>
+                <output expression="&quot;Enter the person's age: &quot;" newline="True"/>
+                <input variable="age"/>
+                <if expression="age&gt;=65">
+                    <then>
+                        <output expression="&quot;You are of retirement age&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;You are not of retirement age&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Press a number to contunue with another request or type -1 to exit&quot;" newline="True"/>
+                <input variable="sentinelValue"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

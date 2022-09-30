@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-04 06:24:45 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDQ7MDY6MDc6MjMgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDQ7MDY6MjQ6NDUgUE07MTsyOTY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Enter how many you want to display your name: &quot;" newline="True"/>
+            <input variable="count"/>
+            <output expression="&quot;Enter your name: &quot;" newline="True"/>
+            <input variable="name"/>
+            <for variable="count" start="count" end="1" direction="dec" step="1">
+                <output expression="&quot;My name is: &quot;&amp;name" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

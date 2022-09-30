@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Buyan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-14 06:06:27 PM"/>
+        <attribute name="created" value="QnV5YW47REVTS1RPUC04T0dWVkxMOzIwMjEtMTItMTQ7MDU6NTA6NTQgUE07MjkwMA=="/>
+        <attribute name="edited" value="QnV5YW47REVTS1RPUC04T0dWVkxMOzIwMjEtMTItMTQ7MDY6MDY6MjcgUE07MTszMDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstValue, secondValue, answer" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is the first value?&quot;" newline="True"/>
+            <input variable="firstValue"/>
+            <output expression="&quot;what is the second value?&quot;" newline="True"/>
+            <input variable="secondValue"/>
+            <assign variable="answer" expression="firstValue * secondValue"/>
+            <output expression="&quot;The first number times the second number equals &quot; &amp; answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

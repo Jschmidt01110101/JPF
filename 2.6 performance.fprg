@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-04 06:05:57 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDI7MDU6NTY6NDAgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDQ7MDY6MDU6NTcgUE07MjsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="balance" type="Integer" array="False" size=""/>
+            <output expression="&quot; Hello, Please enter your name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter the balance&quot;" newline="True"/>
+            <input variable="balance"/>
+            <output expression="&quot;Customer: &quot;&amp;name" newline="True"/>
+            <call expression="displayAddressInfo()"/>
+            <output expression="&quot;Total:&quot; &amp;balance" newline="True"/>
+        </body>
+    </function>
+    <function name="displayAddressinfo" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Doll corp&quot;" newline="True"/>
+            <output expression="&quot;123 Road Ave&quot;" newline="True"/>
+            <output expression="&quot;Key Largo, FL. 87645&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

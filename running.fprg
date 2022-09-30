@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-26 08:05:42 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjEtMTItMjY7MDc6NTQ6MTggUE07Mjg2Nw=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjEtMTItMjY7MDg6MDU6NDIgUE07MjsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="running" type="String" array="False" size=""/>
+            <output expression="&quot;Are you running today?&quot;" newline="True"/>
+            <input variable="running"/>
+            <if expression="running == &quot;yes&quot;">
+                <then>
+                    <output expression="&quot;Bring running shoes&quot;" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;bring your heels&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-05 05:50:01 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDU7MDQ6NTE6MzIgUE07Mjg1Mw=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDU7MDU6NTA6MDEgUE07MTsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="variables" type="Integer" array="False" size=""/>
+            <declare name="number, total" type="Integer" array="False" size=""/>
+            <assign variable="number" expression="2"/>
+            <while expression="(number&lt;=20)">
+                <assign variable="total" expression="number+number"/>
+                <output expression="&quot;What is the total value after each loop repetition?&quot; &amp;total&amp;&quot;.&quot;" newline="True"/>
+                <assign variable="number" expression="number+2"/>
+                <output expression="&quot;sum is:&quot; &amp;total" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

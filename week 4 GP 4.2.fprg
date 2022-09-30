@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-09 06:07:56 AM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDk7MDU6NTc6MDIgQU07Mjg0Ng=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDk7MDY6MDc6NTYgQU07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hotTubPh" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the pH of your hot tub: &quot;" newline="True"/>
+            <input variable="hotTubPh"/>
+            <if expression="hotTubPh&lt;7.2">
+                <then>
+                    <output expression="&quot;you need to add 2 teaspoons of pH increaser&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="hotTubPh&gt;= 7.2 AND hotTubPh &lt;= 7.8">
+                <then>
+                    <output expression="&quot;pH level is okay&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="hotTubPh &gt; 7.8">
+                <then>
+                    <output expression="&quot;You need to add 2 teaspoons of pH decreaser&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

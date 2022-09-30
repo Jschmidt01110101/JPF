@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-18 05:47:51 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTg7MDU6MzQ6MzUgUE07Mjg2Mg=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTg7MDU6NDc6NTEgUE07MTsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cname" type="String" array="False" size=""/>
+            <declare name="msgcount" type="Integer" array="False" size=""/>
+            <declare name="bill" type="Real" array="False" size=""/>
+            <input variable="cname"/>
+            <input variable="msgcount"/>
+            <if expression="msgcount&gt;0 &amp;&amp; msgcount&lt;=60">
+                <then>
+                    <assign variable="bill" expression="(msgcount*5)+((msgcount*5)/100)*12"/>
+                    <output expression="cname" newline="True"/>
+                    <output expression="&quot; your bill comes out to:&quot;" newline="True"/>
+                    <output expression="&quot;$ &quot; &amp;bill" newline="True"/>
+                </then>
+                <else>
+                    <if expression="msgcount&gt;60 &amp;&amp; msgcount&lt;=200">
+                        <then>
+                            <assign variable="bill" expression="(300+(msgcount-60)*5.10)+((300+(msgcount-60)*5.19)/100)*12"/>
+                            <output expression="cname" newline="True"/>
+                            <output expression="&quot; your bill comes out to:&quot;" newline="True"/>
+                            <output expression="&quot;$ &quot; &amp;bill" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="bill" expression="(1014+(msgcount-200)*5.25)+((1014+(msgcount-200)*5.25)/100)*12"/>
+                            <output expression="cname" newline="True"/>
+                            <output expression="&quot; your bill comes out to:&quot;" newline="True"/>
+                            <output expression="&quot;$ &quot; &amp;bill" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

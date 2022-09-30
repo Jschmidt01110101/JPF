@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-12 06:26:07 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTI7MDU6NTM6NDkgUE07Mjg2Mg=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTI7MDY6MjY6MDcgUE07MTsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="o, p, b" type="String" array="False" size=""/>
+            <declare name="a, w" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i=1">
+                <output expression="&quot;owner's name&quot;" newline="True"/>
+                <input variable="o"/>
+                <declare name="pname" type="Integer" array="False" size=""/>
+                <output expression="&quot;pet's name&quot;" newline="True"/>
+                <input variable="p"/>
+                <output expression="&quot;breed&quot;" newline="True"/>
+                <input variable="b"/>
+                <output expression="&quot;age&quot;" newline="True"/>
+                <input variable="a"/>
+                <output expression="&quot;weight in lb&quot;" newline="True"/>
+                <input variable="w"/>
+                <if expression="w&lt;20 or w&gt;100">
+                    <then>
+                        <output expression="&quot;Name: &quot; &amp;p" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Not Acceptable&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;enter a number other than 1 to end&quot;" newline="True"/>
+                <input variable="i"/>
+            </while>
+            <output expression="&quot;owner's name&quot;" newline="True"/>
+            <output expression="o" newline="True"/>
+            <output expression="&quot;pet's name&quot;" newline="True"/>
+            <output expression="p" newline="True"/>
+            <output expression="&quot;breed&quot;" newline="True"/>
+            <output expression="b" newline="True"/>
+            <output expression="&quot;age&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="&quot;weight in lb&quot;" newline="True"/>
+            <output expression="w" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

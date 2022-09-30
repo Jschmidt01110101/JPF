@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-02 05:55:14 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDI7MDU6MzA6NDggUE07Mjg1NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDI7MDU6NTU6MTQgUE07MTsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;" newline="True"/>
+            <input variable="n1"/>
+            <if expression="n1&gt;3">
+                <then>
+                    <output expression="&quot;Error: Invalid entry !, Please enter a number between 1 and 3&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n1==3">
+                        <then>
+                            <output expression="&quot;number is &quot;&amp;n1&amp;&quot;rd&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="n1==2">
+                                <then>
+                                    <output expression="&quot;number is &quot;&amp;n1&amp;&quot;nd&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="n1==1">
+                                        <then>
+                                            <output expression="&quot;number is &quot;&amp;n1&amp;&quot;st&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Thank you for using the chart!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

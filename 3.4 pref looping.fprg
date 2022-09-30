@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-12 06:40:08 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDQ7MDY6MDc6MjMgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTI7MDY6NDA6MDggUE07MzsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <declare name="tuition" type="Real" array="False" size=""/>
+            <assign variable="year" expression="1"/>
+            <assign variable="tuition" expression="12000"/>
+            <while expression="year&lt;=5">
+                <assign variable="tuition" expression="tuition+(year*(tuition*0.05))"/>
+                <output expression="&quot;tuition will be: &quot;&amp;tuition" newline="True"/>
+                <assign variable="year" expression="year+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

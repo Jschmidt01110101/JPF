@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-12 07:00:44 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMDg7MDQ6Mjc6MjkgUE07Mjg2NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMTI7MDc6MDA6NDQgUE07NTsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <output expression="&quot; Thank you for using the Boffo Balloon company please enter your details below:&quot;" newline="True"/>
+            <output expression="&quot;Enter your name: &quot;" newline="True"/>
+            <input variable="Name"/>
+            <declare name="Quantity" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Quantity: &quot;" newline="True"/>
+            <input variable="Quantity"/>
+            <declare name="Size" type="String" array="False" size=""/>
+            <output expression="&quot;Enter(Large,Small, Medium) Size: &quot;" newline="True"/>
+            <input variable="Size"/>
+            <declare name="Sales" type="Real" array="False" size=""/>
+            <if expression="Size==&quot;Large&quot;">
+                <then>
+                    <assign variable="Sales" expression="(13/12)*(Quantity)"/>
+                    <output expression="&quot;Customer Name: &quot; &amp;Name" newline="True"/>
+                    <output expression="&quot;Quantity: &quot; &amp;Quantity" newline="True"/>
+                    <output expression="&quot;Size: &quot; &amp;Size" newline="True"/>
+                    <output expression="&quot;Sales: $&quot; &amp;Sales" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Size==&quot;Medium&quot;">
+                        <then>
+                            <assign variable="Sales" expression="(11/12)*(Quantity)"/>
+                            <output expression="&quot;Customer Name: &quot; &amp;Name" newline="True"/>
+                            <output expression="&quot;Quantity: &quot; &amp;Quantity" newline="True"/>
+                            <output expression="&quot;Size: &quot; &amp;Size" newline="True"/>
+                            <output expression="&quot;Sales: $&quot; &amp;Sales" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Size==&quot;Small&quot;">
+                                <then>
+                                    <assign variable="Sales" expression="(8.6/12)*(Quantity)"/>
+                                    <output expression="&quot;Customer Name: &quot; &amp;Name" newline="True"/>
+                                    <output expression="&quot;Quantity: &quot; &amp;Quantity" newline="True"/>
+                                    <output expression="&quot;Size: &quot; &amp;Size" newline="True"/>
+                                    <output expression="&quot;Sales: $&quot; &amp;Sales" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
