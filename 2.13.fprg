@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-03 06:51:16 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDM7MDY6Mzk6NTMgUE07Mjg2Mw=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDM7MDY6NTE6MTYgUE07MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Please enter your age: &quot;" newline="True"/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <input variable="age"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="age" direction="inc" step="1">
+                <output expression="&quot;Happy Birthday! (year &quot;&amp;i &amp;&quot;)&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

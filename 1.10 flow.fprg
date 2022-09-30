@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-27 07:29:59 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMjc7MDc6MTQ6MjcgUE07Mjg2Mw=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMjc7MDc6Mjk6NTkgUE07MTsyOTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter a number: &quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num!=0">
+                <then>
+                    <assign variable="result" expression="num*num"/>
+                    <output expression="&quot;Value entered is : &quot;&amp;num &amp;&quot; and when it is multiplied by itself it equals: &quot; &amp;result" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

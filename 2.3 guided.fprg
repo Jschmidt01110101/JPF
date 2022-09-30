@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-01 05:53:56 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDE7MDM6MTE6MjcgUE07Mjg0OQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDE7MDU6NTM6NTYgUE07MTsyOTY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is the students's age?&quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age&lt;10">
+                <then>
+                    <output expression="&quot;The age cannot be less than 10. &quot;" newline="True"/>
+                    <output expression="&quot;Try Again. &quot;" newline="True"/>
+                    <output expression="&quot;What is the student's age? &quot;" newline="True"/>
+                    <input variable="age"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Thank You. you entered a valid age.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-24 05:33:48 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMjQ7MDU6Mjk6NDcgUE07Mjg2Ng=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDEtMjQ7MDU6MzM6NDggUE07MTsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="myNumber, myAnswer" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number.&quot;" newline="True"/>
+            <input variable="myNumber"/>
+            <assign variable="myanswer" expression="myNumber * 10"/>
+            <output expression="&quot;Yout number times 10 equals: &quot; &amp; myAnswer &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 04:09:52 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDM6NDQ6MzMgUE07Mjg1OQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDQ6MDk6NTIgUE07MzsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ArrayAges" type="Integer" array="True" size="6"/>
+            <declare name="Max" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="Max" expression="6"/>
+            <output expression="&quot;Please enter the ages of &quot; &amp;Max &amp; &quot; of your freinds: &quot;" newline="True"/>
+            <for variable="i" start="0" end="Max-1" direction="inc" step="1">
+                <input variable="ArrayAges[i]"/>
+            </for>
+            <output expression="&quot;The ages of &quot; &amp; Max &amp; &quot; of your freinds are: &quot;" newline="True"/>
+            <for variable="i" start="0" end="Max-1" direction="inc" step="1">
+                <output expression="ArrayAges[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 03:24:48 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDM6MTU6MDkgUE07Mjg2MA=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDM6MjQ6NDggUE07MjsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temperature" type="Real" array="True" size="10"/>
+            <declare name="TEMPS, counter" type="Integer" array="False" size=""/>
+            <assign variable="TEMPS" expression="10"/>
+            <assign variable="temperature[0]" expression="78.6"/>
+            <assign variable="temperature[1]" expression="82.1"/>
+            <assign variable="temperature[2]" expression="79.5"/>
+            <assign variable="temperature[3]" expression="75.0"/>
+            <assign variable="temperature[4]" expression="75.4"/>
+            <assign variable="temperature[5]" expression="71.8"/>
+            <assign variable="temperature[6]" expression="73.3"/>
+            <assign variable="temperature[7]" expression="69.5"/>
+            <assign variable="temperature[8]" expression="74.1"/>
+            <assign variable="temperature[9]" expression="75.7"/>
+            <output expression="&quot;Daily temperatures are for the last &quot; &amp;TEMPS&amp; &quot; days:&quot;" newline="True"/>
+            <for variable="counter" start="0" end="9" direction="inc" step="1">
+                <output expression="temperature[counter]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

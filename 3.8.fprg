@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-09 06:06:25 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDk7MDY6MDM6MzUgUE07Mjg2MA=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDk7MDY6MDY6MjUgUE07MTsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="firstFunction"/>
+            <call expression="secondFunction"/>
+            <call expression="thirdFunction"/>
+            <output expression="&quot;End of program&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="firstFunction" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;First&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="secondFunction" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Second&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="thirdFunction" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Third&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

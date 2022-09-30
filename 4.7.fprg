@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-18 05:04:01 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDM6NDQ6MzMgUE07Mjg1OQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTg7MDU6MDQ6MDEgUE07NTsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ArrayTemps" type="Integer" array="True" size="12"/>
+            <declare name="Max" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="Max" expression="12"/>
+            <output expression="&quot;Please enter the average temperature over the past  &quot; &amp;Max &amp; &quot; months: &quot;" newline="True"/>
+            <for variable="i" start="0" end="Max-1" direction="inc" step="1">
+                <input variable="ArrayTemps[i]"/>
+            </for>
+            <output expression="&quot;The temperatures over the past  &quot; &amp; Max &amp; &quot; months are: &quot;" newline="True"/>
+            <for variable="i" start="0" end="Max-1" direction="inc" step="1">
+                <output expression="ArrayTemps[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

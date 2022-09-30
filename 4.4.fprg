@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 03:07:24 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDI6NTI6MzEgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTc7MDM6MDc6MjQgUE07NDsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sname" type="String" array="True" size="20"/>
+            <declare name="scores" type="Real" array="True" size="6"/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="sname[0]" expression="&quot;ECPI University&quot;"/>
+            <assign variable="scores[0]" expression="78.7"/>
+            <assign variable="scores[1]" expression="98.4"/>
+            <assign variable="scores[2]" expression="100.0"/>
+            <assign variable="scores[3]" expression="96.5"/>
+            <assign variable="scores[4]" expression="100.0"/>
+            <assign variable="scores[5]" expression="88.8"/>
+            <assign variable="average" expression="0.0"/>
+            <call expression="printScores(scores)"/>
+            <for variable="counter" start="0" end="5" direction="inc" step="1">
+                <assign variable="average" expression="average + scores [counter]"/>
+            </for>
+            <assign variable="average" expression="average/6"/>
+            <output expression="&quot;At &quot; &amp; sname[0] &amp;&quot; ,your class average is &quot; &amp; average" newline="True"/>
+        </body>
+    </function>
+    <function name="printScores" type="None" variable="">
+        <parameters>
+            <parameter name="scores" type="Real" array="True"/>
+        </parameters>
+        <body>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <declare name="tot" type="Real" array="False" size=""/>
+            <assign variable="tot" expression="0"/>
+            <for variable="counter" start="0" end="5" direction="inc" step="1">
+                <output expression="&quot;&quot;&amp;scores[counter]&amp;&quot;&quot;" newline="True"/>
+                <assign variable="tot" expression="tot+scores[counter]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

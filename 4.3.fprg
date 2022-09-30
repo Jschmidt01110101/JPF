@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 05:29:59 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTY7MDU6MDM6MjUgUE07Mjg1Ng=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMTY7MDU6Mjk6NTkgUE07MTsyOTc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sname" type="String" array="True" size="20"/>
+            <assign variable="sname[0]" expression="&quot;ECPI University&quot;"/>
+            <declare name="scores" type="Real" array="True" size="6"/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <assign variable="scores[0]" expression="100.00"/>
+            <assign variable="scores[1]" expression="100.0"/>
+            <assign variable="scores[2]" expression="76.0"/>
+            <assign variable="scores[3]" expression="97.0"/>
+            <assign variable="scores[4]" expression="72.0"/>
+            <assign variable="scores[5]" expression="86.7"/>
+            <assign variable="average" expression="0.0"/>
+            <for variable="counter" start="0" end="5" direction="inc" step="1">
+                <assign variable="average" expression="average+scores [counter]"/>
+            </for>
+            <assign variable="average" expression="average/6"/>
+            <output expression="&quot;At &quot;&amp;sname[0]&amp; &quot; ,your class average is &quot; &amp;average" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

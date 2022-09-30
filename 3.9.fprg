@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="schmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-09 06:23:15 PM"/>
+        <attribute name="created" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDk7MDY6MTc6MzcgUE07Mjg2Nw=="/>
+        <attribute name="edited" value="c2NobWk7TEFQVE9QLU5HNlQ3TDdEOzIwMjItMDItMDk7MDY6MjM6MTUgUE07NTsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="income" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your income:&quot;" newline="True"/>
+            <input variable="income"/>
+            <if expression="income&gt;90000">
+                <then>
+                    <output expression="&quot; Congratulations!, You are doing great!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;You will make $90,000, if you keep going&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
